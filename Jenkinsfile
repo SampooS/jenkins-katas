@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'gradle:6-jdk11'
-    }
-
-  }
+  agent none
   stages {
     stage('Parallel execution') {
       parallel {
